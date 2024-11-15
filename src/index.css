@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.movie-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.movie-card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.movie-card a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.movie-card a:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
